@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aaron Goodrum</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.10.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.10.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.10.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.10.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.10.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body data-spy="scroll" data-target="#navbarHome" data-offset="100">
+    <header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="img/profileLogo.png" width="40" height="40" class="d-inline-block align-top" alt="Aaron profile Logo">
+          WebBuild
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarHome" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarHome" data-toggle="collapse" data-target="#navbarHome">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#WORK">My Work</a>
+          <a class="nav-item nav-link" href="#ABOUT">About</a>
+          <!-- <a class="nav-item nav-link" href="#CONTACT">Contact</a> -->
+        </div>
+      </div>
+    </nav>
+    </header>
+    <div>
+    <div id="HOME" class="page-main container">
+      <div class="row">
+        <div class="col-md-auto col-sm">
+          <img id="headProfile" class="img-thumbnail rounded mx-auto border border-success" src="img/profilePic.jpg" alt="profile of aaron">
+        </div>
+          <div class="col col-sm page-main-content">
+            <h1>Aaron - Web Developer</h1>
+            <h2>With a passion to develop code I have been using resources from Treehouse, Udemy and FreeCodeCamp for developing my skills and experience.</h2>
+            <table class="mb-2">
+              <tr>
+                <tr><td> Experience with HTML, CSS, and JavaScript </td></tr>
+                <tr><td> Experience with modern JavaScript frameworks </td></tr>
+                <tr><td> Experience with UI frameworks (e.g. Bootstrap, jQuery) </td></tr>
+                <tr><td> Understanding of responsive design principles</td></tr>
+              </tr>
+            </table>
+          </div>
+      </div>
+    </div>
+    <!-- END HOME -->
+    <div class="triangle-down"></div>
+    <!-- WORK -->
+    <div id="WORK" class="page-work">
+      <div class="container">
+        <div class="container project-head">
+          <h2>Projects</h2>
+            <div class="container">
+            <p>
+              I'm currently working on several front-end development projects on
+              Free Code Camp, as well on some other online courses, other websites
+              and my personal projects.
+            </p>
+            <p> I will be providing updates to my projects showing my skills, experience,
+               and exploring the field of web development.
+            </p>
+            </div>
+        </div>
+    
+        <div class="card-deck" id="slideshow">
+            <div class="card">
+              <a href="https://www.groominggals.net/" target="_blank">
+              <img src="img\Grooming_Gals.png" alt="grooming gals website"></a>
+                <div class="card-body">
+                  <p class="card-text"> This Project was to rebuild a customer's website. 
+                    <h4>Skills Used:</h4>
+                    <ul>
+                      <li>Responsive design</li>
+                      <li>Search Engine Optimization </li>
+                      <li>HTML - CSS</li>
+                      <li>Customer UI</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+          <div class="card">
+            <svg viewBox="-50 -20">
+              <use xlink:href="svg/html.svg#jsSVG"></use>
+            </svg>
+            <div class="card-body">
+              <h4 class="card-text">
+                  <a href="colorGame/index.html" target="_blank">
+                    <img src="img/colorGame.png" alt="The Color Game"></a>
+                  </h4>
+              <h4>JavaScript color game:</h4>
+              <ul>
+                <li>Responsive design</li>
+                <li>JavaScript </li>
+                <li>HTML - CSS</li>
+            </ul>
+            </div>
+          </div>
+            <div class="card">
+              <svg viewBox="-50 -20">
+                <use xlink:href="svg/html.svg#cssSVG"></use>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">When testing out typography it’s a good
+                  idea to pick a pangram: a phrase that includes every letter in
+                  the alphabet. This phrase does just that, and makes an ideal
+                  choice for font selection.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+                <a href="https://github.com/AaronGoodrum/vuejs-poster-shop" target="_blank">
+                <img src="img\Vue_js_Poster_App.png" alt="Vue JS Project app"></a>
+                  <div class="card-body">
+                    <p class="card-text"> Vue.js Projec what's to build an GET API request the images the view the whole project as a mock e-commerce website.
+                      <h4>Skills Used:</h4>
+                      <ul>
+                        <li>Vue.JS</li>
+                        <li>Node.JS</li>
+                        <li>HTML - CSS - JS</li>
+                        <li>Imgur API</li>
+                    </ul>
+                    </p>
+                  </div>
+                </div>
+          </div> <!-- End Cards -->
+              <div class="card-deck">
+                <div class="card">
+                  <div class="card-body mx-auto">
+                    <h2>Web development</h2>
+                    <p class="card-text">Building Web development skills from Team Tree House.
+                      <p> I've been able to understand and learn HTML, CSS, and Javascript.
+                        To pursue my dreams in Web development.</p>
+                    </p>
+                    <a href="http://referrals.trhou.se/aarongoodrum" target="_blank">
+                    <img class="img-fluid" alt="team tree house" src="img/referral-badge-grn.png"/></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <a href="http://referrals.trhou.se/aarongoodrum" target="_blank">
+                      <img class="img-fluid" alt="seattle city" src="img\seattleSkyline.png"/></a>
+                      <p class="card-text pt-2">Employment of web developers is projected
+                        to grow 13 percent from 2016 to 2026, faster than the
+                        average for all occupations.
+                      </p>
+                      <p>Job opportunities for web developers are expected to be good.
+                         Those with knowledge of multiple programming languages and
+                          digital multimedia tools
+                      </p>
+                  </div>
+                </div>
+              </div> <!-- End Card -->
+      </div>
+    </div>
+    <!-- END WORK -->
+    <div class="triangle-down"></div>
+      <!-- ABOUT -->
+    <div id="ABOUT" class="page-about">
+      <div class="container">
+          <h2>About Me</h2>
+          <div class="col">
+            <h3>Contact and View my Work</h3>
+            <div class="w-100 techBadges">
+              <a class="githubC" href="https://github.com/AaronGoodrum" target="_blank">
+              <svg viewBox="0 0 125 125" class="badges">
+                <use xlink:href="svg/html.svg#githubSVG"></use>
+              </svg></a>
+              <a class="linkinC" href="https://www.linkedin.com/in/aaron-goodrum/" target="_blank">
+              <svg viewBox="0 0 125 125" class="badges">
+                <use xlink:href="svg/html.svg#linkinSVG"></use>
+              </svg></a>
+              <a class="treehouseC" href="https://teamtreehouse.com/aarongoodrum" target="_blank">
+              <svg viewBox="0 0 125 125" class="badges">
+                <use xlink:href="svg/html.svg#treehouseSVG"></use>
+              </svg></a>
+              <a class="gmailC" href="mailto:ag505181@gmail.com?Subject=Hello%20Aaron%20Goodrum" target="_top">
+              <svg viewBox="0 0 125 125" class="badges">
+                <use xlink:href="svg/html.svg#gmailSVG"></use>
+              </svg></a>
+    
+            </div>
+          </div>
+    
+          <div class="col pt-2">
+            <h3>Technologies I've worked with</h3>
+            <div class="w-100 techBadges">
+              <svg viewBox="0 0 125 125" class="badges">
+                <use xlink:href="svg/html.svg#htmlSVG"></use>
+              </svg>
+              <svg viewBox="0 0 125 125" class="badges">
+                <use xlink:href="svg/html.svg#cssSVG"></use>
+              </svg>
+              <svg viewBox="0 0 125 125" class="badges">
+                <use xlink:href="svg/html.svg#jsSVG"></use>
+              </svg>
+              <svg viewBox="0 0 125 125" class="badges">
+                <use xlink:href="svg/html.svg#jquerySVG"></use>
+              </svg>
+              <svg viewBox="0 0 125 125" class="badges">
+                <use xlink:href="svg/html.svg#githubcolorSVG"></use>
+              </svg>
+              <svg viewBox="0 0 125 125" class="badges">
+                <use xlink:href="svg/html.svg#railsSVG"></use>
+              </svg>
+              <svg viewBox="0 0 125 125" class="badges">
+                  <use xlink:href="svg/html.svg#nodeSVG"></use>
+                </svg>
+                <svg viewBox="0 0 125 125" class="badges">
+                    <use xlink:href="../svg/html.svg#vueSVG"></use>
+                  </svg>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- END ABOUT -->
+    </div><!-- scrollspy -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
